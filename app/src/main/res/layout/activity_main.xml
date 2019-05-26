@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0B224"
+    android:weightSum="3"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:textSize="100px"
+        android:text="Yolo" />
+
+    <TextView
+        android:id="@+id/txtDisplayCount"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="120px"
+        android:layout_width="match_parent"
+        android:background="#00BCD4"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btncountup"
+            android:text="++"
+            android:onClick="countUp"
+            android:background="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:textSize="38sp"
+            android:layout_margin="3dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            />
+        <Button
+            android:id="@+id/btncountdown"
+            android:text="--"
+            android:onClick="countDown"
+
+            android:background="#E42929"
+            android:layout_height="match_parent"
+            android:textSize="38sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_margin="3dp"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
